@@ -28,6 +28,10 @@ footer a {
     margin-top: 50px;
 }
 
+.active {
+    border: #007bff 1px solid;
+}
+
 .container {
     position: relative;
     margin-top: inherit;

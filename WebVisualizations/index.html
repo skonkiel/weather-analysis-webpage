@@ -10,12 +10,16 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4e24bd4333.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
+
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="./index.html">Latitude</a>
-        <ul class="nav justify-content-end">
+
+        <!-- nav content that's shown until breakpoint-->
+        <ul class="nav justify-content-end nav-list">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
                 <div class="dropdown-menu">
@@ -32,7 +36,75 @@
               <a class="nav-link" href="./data.html">Data</a>
             </li>
           </ul>
+
+          <!-- content that's hidden until screen is small -->
+
+          <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+      aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+          class="fas fa-bars fa-1x"></i></span></button>
+
+          <!-- adapted from https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/ --> 
+         <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+  
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./visualizations/clouds.html">Clouds vs Latitude</a>
+                        <a class="dropdown-item" href="./visualizations/humidity.html">Humidity vs Latitude</a>
+                        <a class="dropdown-item" href="./visualizations/temp.html">Temperature vs Latitude</a>
+                        <a class="dropdown-item" href="./visualizations/wind.html">Wind vs Latitude</a>
+                      </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./compare.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./data.html">Data</a>
+                </li>
+            </ul>
+            <!-- Links -->
+    
+      </div>
+      <!-- Collapsible content -->
+
     </nav>
+ 
+  
+
+
+
+
+    <!-- <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">Latitude</a>
+
+        <ul class="nav justify-content-end nav-list">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./visualizations/clouds.html">Clouds vs Latitude</a>
+                    <a class="dropdown-item" href="./visualizations/humidity.html">Humidity vs Latitude</a>
+                    <a class="dropdown-item" href="./visualizations/temp.html">Temperature vs Latitude</a>
+                    <a class="dropdown-item" href="./visualizations/wind.html">Wind vs Latitude</a>
+                  </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./compare.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./data.html">Data</a>
+            </li>
+          </ul>
+
+    </nav> -->
+
+
+
+
+
+
     <div class="container">
         <div class="row">
             <div class="col-lg-7 col-md-7 col-sm-12">

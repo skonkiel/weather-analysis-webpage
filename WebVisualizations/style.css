@@ -23,6 +23,10 @@ footer a {
     color: #007bff;
 }
 
+li .nav-link {
+    color: #FFF;
+}
+
 .table {
     padding-bottom: 50px;
     margin-top: 50px;
@@ -67,10 +71,14 @@ footer a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 @media (max-width: 768px) {
     h2 {
+        margin-top: 20px;
+    }
+
+    h3 {
         margin-top: 20px;
     }
 
@@ -78,6 +86,7 @@ footer a {
         width: 100px;
         float: left;
         margin-right: 10px;
+        margin-bottom: 100px;
     }
 
     .navbar-toggler {
@@ -86,6 +95,10 @@ footer a {
 
     .nav {
         display: none;
+    }
+
+    .main-img {
+        width: 50%;
     }
 }
 
@@ -96,7 +109,7 @@ footer a {
         width: 100px;
         float: left;
         margin-right: 10px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
 }
